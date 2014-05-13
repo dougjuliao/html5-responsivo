@@ -182,12 +182,35 @@ textarea {
     *zoom: 1;
 }
 
+body{
+padding: 10px;
+}
 
+h1{
+font-size:2em;
+}
+h2{
+font-size:1.8em;
+}
+h3{
+font-size:1.6em;
+}
+h4{
+font-size:1.4em;
+}
+h5{
+font-size:1.2em;
+}
+h6{
+font-size:1em;
+}
+p{
+font-size:1em;
+}
 
 header,nav,section,article,aside,footer{
 box-sizing:border-box;
 -moz-box-sizing:border-box; /* Firefox */
-
 }
 
 header,section,article,aside{
@@ -197,6 +220,7 @@ margin-bottom:10px;
 header{
 background:#f6f6f6;
 width:100%;
+float:left;
 }
 nav{
 background:#ccc;
@@ -252,11 +276,14 @@ border-bottom:1px solid #fff;
 }
 
 #logo{
-width:200px;
-height:120px;
-border:1px solid red;
+width:120px;
+margin:20px;
 }
 
+#logo img{
+width:100%;
+max-height:100%;
+}
 nav {  
     height: 40px;  
     width: 100%; 
@@ -278,6 +305,10 @@ nav ul {
 nav li {  
     display: inline;  
     float: left;  
+}
+
+.active{
+background: #666;
 }
 
 .clearfix:before,  
@@ -319,6 +350,8 @@ nav a:hover, nav a:active {
 nav a#pull {  
     display: none;  
 }
+
+
 
 
 @media only screen and (max-width: 700px){
@@ -379,7 +412,7 @@ section,aside{
         top: 10px;  
     }
 	#logo{
-		width:100%;
+		margin:0 auto;
 	}
 }
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			
+			$(window).resize(function(){  
+				var w = $(window).width();  
+				if(w > 320 && menu.is(':hidden')) {  
+					menu.removeAttr('style');  
+				}  
+			});  
+
+		});
+	</script>
+
+    </head>
+    <body>
+
+		<header>		
+			<div  id="logo"></div>
+			<nav>
+				<nav class="clearfix">  
+					<ul class="clearfix">  
+						<li><a href="#">Home</a></li>  
+						<li><a href="#">How-to</a></li>  
+						<li><a href="#">Icons</a></li>  
+						<li><a href="#">Design</a></li>  
+						<li><a href="#">Web 2.0</a></li>  
+						<li><a href="#">Tools</a></li>    
+					</ul>  
+					<a href="#" id="pull">Menu</a>  
+				</nav> 
+			</nav>
+		</header>
+		
+	<section>
+		<article>			
+			<div class="artigo">
+				<h2>Artigo</h2>
+				<p><img src="images/canvas.jpg" class="img-artigo" alt="imagem teste" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget faucibus tellus. Vivamus vestibulum vestibulum orci, nec suscipit ipsum iaculis nec. Morbi sed tortor quam. Suspendisse tortor enim, lobortis a molestie vel, rhoncus vitae ligula. Mauris non nibh pulvinar, eleifend orci quis, convallis leo. Mauris viverra, est ut tincidunt aliquet, lectus enim vestibulum sapien, aliquam tempor arcu libero in lorem.</p>
+				<p>Duis sapien augue, sodales consectetur molestie non, aliquam commodo tortor. Fusce vel metus odio. Nulla venenatis sodales ultrices. Praesent ullamcorper urna enim, eget auctor mi egestas vel. Sed fermentum justo in tellus gravida, a vehicula purus blandit. Vestibulum quis gravida urna. Sed tristique eros a urna tincidunt, convallis venenatis purus fermentum. Integer iaculis porta augue, consectetur pulvinar nisi sagittis nec. Cras iaculis molestie nibh quis commodo. Integer volutpat congue ipsum, ac bibendum sem egestas eu.</p>
+			</div>
+		</article>
+		
+		<article>			
+			<div class="artigo">
+				<h2>Artigo</h2>
+				<p><img src="images/canvas.jpg" class="img-artigo" alt="imagem teste" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget faucibus tellus. Vivamus vestibulum vestibulum orci, nec suscipit ipsum iaculis nec. Morbi sed tortor quam. Suspendisse tortor enim, lobortis a molestie vel, rhoncus vitae ligula. Mauris non nibh pulvinar, eleifend orci quis, convallis leo. Mauris viverra, est ut tincidunt aliquet, lectus enim vestibulum sapien, aliquam tempor arcu libero in lorem.</p>
+				<p>Duis sapien augue, sodales consectetur molestie non, aliquam commodo tortor. Fusce vel metus odio. Nulla venenatis sodales ultrices. Praesent ullamcorper urna enim, eget auctor mi egestas vel. Sed fermentum justo in tellus gravida, a vehicula purus blandit. Vestibulum quis gravida urna. Sed tristique eros a urna tincidunt, convallis venenatis purus fermentum. Integer iaculis porta augue, consectetur pulvinar nisi sagittis nec. Cras iaculis molestie nibh quis commodo. Integer volutpat congue ipsum, ac bibendum sem egestas eu.</p>
+			</div>
+		</article>
+		
+
+		<article>			
+			<div class="artigo">
+				<h2>Artigo</h2>
+				<p><img src="images/canvas.jpg" class="img-artigo" alt="imagem teste" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget faucibus tellus. Vivamus vestibulum vestibulum orci, nec suscipit ipsum iaculis nec. Morbi sed tortor quam. Suspendisse tortor enim, lobortis a molestie vel, rhoncus vitae ligula. Mauris non nibh pulvinar, eleifend orci quis, convallis leo. Mauris viverra, est ut tincidunt aliquet, lectus enim vestibulum sapien, aliquam tempor arcu libero in lorem.</p>
+				<p>Duis sapien augue, sodales consectetur molestie non, aliquam commodo tortor. Fusce vel metus odio. Nulla venenatis sodales ultrices. Praesent ullamcorper urna enim, eget auctor mi egestas vel. Sed fermentum justo in tellus gravida, a vehicula purus blandit. Vestibulum quis gravida urna. Sed tristique eros a urna tincidunt, convallis venenatis purus fermentum. Integer iaculis porta augue, consectetur pulvinar nisi sagittis nec. Cras iaculis molestie nibh quis commodo. Integer volutpat congue ipsum, ac bibendum sem egestas eu.</p>
+			</div>
+		</article>
+	</section>
+	
+	
+	<aside>
+		<div class="artigo">
+			<h2>Artigo</h2>
+			<p><img src="images/canvas.jpg" class="img-artigo" alt="imagem teste" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget faucibus tellus. Vivamus vestibulum vestibulum orci, nec suscipit ipsum iaculis nec. Morbi sed tortor quam. Suspendisse tortor enim, lobortis a molestie vel, rhoncus vitae ligula. Mauris non nibh pulvinar, eleifend orci quis, convallis leo. Mauris viverra, est ut tincidunt aliquet, lectus enim vestibulum sapien, aliquam tempor arcu libero in lorem.</p>
+			<p>Duis sapien augue, sodales consectetur molestie non, aliquam commodo tortor. Fusce vel metus odio. Nulla venenatis sodales ultrices. Praesent ullamcorper urna enim, eget auctor mi egestas vel. Sed fermentum justo in tellus gravida, a vehicula purus blandit. Vestibulum quis gravida urna. Sed tristique eros a urna tincidunt, convallis venenatis purus fermentum. Integer iaculis porta augue, consectetur pulvinar nisi sagittis nec. Cras iaculis molestie nibh quis commodo. Integer volutpat congue ipsum, ac bibendum sem egestas eu.</p>
+		</div>
+		
+		<hr />
+		
+		<div class="artigo">
+			<h2>Artigo</h2>
+			<p><img src="images/canvas.jpg" class="img-artigo" alt="imagem teste" /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget faucibus tellus. Vivamus vestibulum vestibulum orci, nec suscipit ipsum iaculis nec. Morbi sed tortor quam. Suspendisse tortor enim, lobortis a molestie vel, rhoncus vitae ligula. Mauris non nibh pulvinar, eleifend orci quis, convallis leo. Mauris viverra, est ut tincidunt aliquet, lectus enim vestibulum sapien, aliquam tempor arcu libero in lorem.</p>
+			<p>Duis sapien augue, sodales consectetur molestie non, aliquam commodo tortor. Fusce vel metus odio. Nulla venenatis sodales ultrices. Praesent ullamcorper urna enim, eget auctor mi egestas vel. Sed fermentum justo in tellus gravida, a vehicula purus blandit. Vestibulum quis gravida urna. Sed tristique eros a urna tincidunt, convallis venenatis purus fermentum. Integer iaculis porta augue, consectetur pulvinar nisi sagittis nec. Cras iaculis molestie nibh quis commodo. Integer volutpat congue ipsum, ac bibendum sem egestas eu.</p>
+		</div>
+	</aside>
+	
+	<footer><p>footer</p></footer>
+
+
+    </body>
+</html>
